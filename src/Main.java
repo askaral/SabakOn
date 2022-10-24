@@ -2,13 +2,13 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(myMethod(4, 3,6,7,11,8,9,23,65,44,77,9,69));
+        System.out.println(myMethod(5, 3,6,7,11,8,19,20,15,14,17,9,26));
 
     }
 
     public static boolean myMethod(int a, int ... numbers) {
-        for (int i = 0; i < numbers.length; i++)
-           if(a == numbers[i]){
+        for (int b:numbers)
+           if(a == b){
                return true;
         }  return false;
      }
